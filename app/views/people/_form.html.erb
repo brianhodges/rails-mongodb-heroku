@@ -1,0 +1,50 @@
+<%= form_with(model: person, local: true) do |form| %>
+  <% if person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :person_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :person_last_name %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :person_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :btc_address %>
+    <% if person.new_record? %>
+      <%= form.text_field :btc_address, id: :person_btc_address, value: ((params["person"] && params["person"]["btc_address"]) ? params["person"]["btc_address"] : @btc_address), size: 40, readonly: true %>
+    <% else %>
+      <%= form.text_field :btc_address, id: :person_btc_address, size: 40, readonly: true %>
+    <% end %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :ip_address %>
+    <% if person.new_record? %>
+      <%= form.text_field :ip_address, id: :person_ip_address, value: ((params["person"] && params["person"]["ip_address"]) ? params["person"]["ip_address"] : @ipv4), readonly: true %>
+    <% else %>
+      <%= form.text_field :ip_address, id: :person_ip_address, readonly: true %>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

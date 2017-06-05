@@ -1,0 +1,1657 @@
+Started GET "/people" for ::1 at 2017-06-04 14:35:08 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0022159999999999997s
+  Rendered people/index.html.erb within layouts/application (11703.5ms)
+Completed 200 OK in 13304ms (Views: 13279.1ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 14:35:28 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (34.1ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 67ms (Views: 64.3ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 14:36:03 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ds/ipZTn9y7t4PXCK5lFC50UQjb1OwDQH6ArxtlOs63NljYH/wGXqiJ7N6lfCEa7ZvYWkrM83FiBLYJNKp8/7A==", "person"=>{"name"=>"B", "street"=>"5th", "city"=>"Richmond", "state"=>"VA"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('59345313d85a82f82e583de0'), "name"=>"B", "street"=>"5th", "city"=>"Richmond", "state"=>"VA"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.060917s
+Redirected to http://localhost:8080/people/59345313d85a82f82e583de0
+Completed 302 Found in 67ms
+
+
+Started GET "/people/59345313d85a82f82e583de0" for ::1 at 2017-06-04 14:36:04 -0400
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"59345313d85a82f82e583de0"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('59345313d85a82f82e583de0')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000943s
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 37.6ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 14:36:08 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001247s
+  Rendered people/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 45ms (Views: 41.6ms)
+
+
+Started GET "/" for ::1 at 2017-06-04 20:40:56 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Development/.rvm/gems/ruby-2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Development/.rvm/gems/ruby-2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 22ms (Views: 10.7ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 20:41:00 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.002212s
+  Rendered people/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 309ms (Views: 294.1ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 20:41:03 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (52.5ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 81ms (Views: 78.6ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 20:41:16 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eKYZEP9IiKud6w7MDNv5r0i/vw4cQOOlfC1YJ9th2Gmfodt2oAg6RAdBV+zfcLPMCI602E3POi5DkxG0T8n5ag==", "person"=>{"name"=>"B", "street"=>"11th", "city"=>"Richmond", "state"=>"VA"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934a8acd85a82387c849924'), "name"=>"B", "street"=>"11th", "city"=>"Richmond", "state"=>"VA"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.0021160000000000003s
+Redirected to http://localhost:8080/people/5934a8acd85a82387c849924
+Completed 302 Found in 5ms
+
+
+Started GET "/people/5934a8acd85a82387c849924" for ::1 at 2017-06-04 20:41:16 -0400
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"5934a8acd85a82387c849924"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934a8acd85a82387c849924')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000686s
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 23.3ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 20:41:26 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001039s
+  Rendered people/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 53ms (Views: 49.3ms)
+
+
+Started DELETE "/people/5934a8acd85a82387c849924" for ::1 at 2017-06-04 20:41:28 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wekmA8Ues+tsRCIGLCiPrOkGpI1yr3Z/684Q+iJbjyA9EYz5QuQnX2eVHM6Dr/YbCwTnfTputOfN6LV+HFswTQ==", "id"=>"5934a8acd85a82387c849924"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934a8acd85a82387c849924')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0011940000000000002s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934a8acd85a82387c849924')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.001379s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 8ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 20:41:28 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001142s
+  Rendered people/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 37.9ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 20:41:42 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.9ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 53ms (Views: 42.7ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 20:41:51 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bEuott39cwi5P0TBySbQLdTXU8nK9K4Vo7/j06pUNE6LTGrQgr3B5yOVHeEajZpOlOZYH5t7d56cAapAPvwVTQ==", "person"=>{"name"=>"B", "street"=>"11th", "city"=>"Richmond", "state"=>"VA"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"name"=>"B"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.002506s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (2.9ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 31ms (Views: 24.2ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 20:41:56 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"00Flgr2t4r9/VvVVzH2qIgUNA5dqb42OcZ8bWbL6Tywvuc94Old2C3SHy51j+tOV5w9AZyKuTxZXub7djPrwQQ==", "person"=>{"name"=>"P", "street"=>"11th", "city"=>"Richmond", "state"=>"VA"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"name"=>"P"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000624s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934a8d4d85a82387c849925'), "name"=>"P", "street"=>"11th", "city"=>"Richmond", "state"=>"VA"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.0005719999999999999s
+Redirected to http://localhost:8080/people/5934a8d4d85a82387c849925
+Completed 302 Found in 5ms
+
+
+Started GET "/people/5934a8d4d85a82387c849925" for ::1 at 2017-06-04 20:41:56 -0400
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"5934a8d4d85a82387c849925"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934a8d4d85a82387c849925')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00065s
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 21.8ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:02:49 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0026980000000000003s
+  Rendered people/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 302ms (Views: 271.9ms)
+
+
+Started DELETE "/people/59345313d85a82f82e583de0" for ::1 at 2017-06-04 21:02:54 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lUTNfYd7OayYEcZLWodTpnHrCclLXzaNQB2sVCdJCBFpvGeHAIGtGJPA+IP1ACoRk+lKOQOe9BVmOwnQGUm3fA==", "id"=>"59345313d85a82f82e583de0"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('59345313d85a82f82e583de0')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0008780000000000001s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('59345313d85a82f82e583de0')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.001164s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 6ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:02:54 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0008139999999999999s
+  Rendered people/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 30ms (Views: 27.7ms)
+
+
+Started DELETE "/people/5934a8d4d85a82387c849925" for ::1 at 2017-06-04 21:02:55 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WH8RhMNMMP7LGXs1CE2uSVQVZ7shSjxueFviYPfdaY+kh7t+RLakSsDIRf2nytf+thckS2mL/vZefUfkyd3W4g==", "id"=>"5934a8d4d85a82387c849925"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934a8d4d85a82387c849925')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000513s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934a8d4d85a82387c849925')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000601s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 4ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:02:55 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0007610000000000001s
+  Rendered people/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 23.4ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:02:57 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (20.7ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 52ms (Views: 48.6ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:03:06 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FShK1IXK4TxRRr3QxOCNkUysiYT53OWw6b6iJvqx8f3yL4iy2opT08vs5PAXS8fyDJ2CUqhTPDvWAOu1bhnQ/g==", "person"=>{"first_name"=>"P", "last_name"=>"Baby"}, "commit"=>"Create Person"}
+Unpermitted parameters: :first_name, :last_name
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>nil}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00069s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934adcad85a823e770ceebc')}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000668s
+Redirected to http://localhost:8080/people/5934adcad85a823e770ceebc
+Completed 302 Found in 6ms
+
+
+Started GET "/people/5934adcad85a823e770ceebc" for ::1 at 2017-06-04 21:03:06 -0400
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"5934adcad85a823e770ceebc"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934adcad85a823e770ceebc')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000527s
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 25.2ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:03:31 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000772s
+  Rendered people/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 52ms (Views: 42.2ms)
+
+
+Started DELETE "/people/5934adcad85a823e770ceebc" for ::1 at 2017-06-04 21:03:33 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sDgE3rHKVnsEBc3h4gsGpN8BYmeWCR0cLyxTPN6+6O1MwK4kNjDCzw/U8ylNjH8TPQMhl97I34QJCva44L5XgA==", "id"=>"5934adcad85a823e770ceebc"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934adcad85a823e770ceebc')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000477s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934adcad85a823e770ceebc')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000544s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 4ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:03:33 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00066s
+  Rendered people/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 28ms (Views: 24.4ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:03:35 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (2.7ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 31ms (Views: 27.9ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:03:39 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yIAf3Ka0qcTl/yF/14zpeKelB9hzfmXNOnFlqCjMc6Mvh926+fQbK39VeF8EJ6Mb55QMDiLxvEYFzyw7vGRSoA==", "person"=>{"first_name"=>"P", "last_name"=>"Baby"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Baby"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000819s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934adebd85a823e770ceebd'), "first_name"=>"P", "last_name"=>"Baby"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.0005729999999999999s
+Redirected to http://localhost:8080/people/5934adebd85a823e770ceebd
+Completed 302 Found in 6ms
+
+
+Started GET "/people/5934adebd85a823e770ceebd" for ::1 at 2017-06-04 21:03:39 -0400
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"5934adebd85a823e770ceebd"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934adebd85a823e770ceebd')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0012950000000000001s
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 23.3ms)
+
+
+MONGODB | Broken pipe
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'unknown'.
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001427s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95585'), "last_name"=>"Bending", "first_name"=>"Rina"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000875s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000523s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95586'), "last_name"=>"Berkeley", "first_name"=>"Correy"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000413s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00056s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95587'), "last_name"=>"Gumey", "first_name"=>"Kandace"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000424s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000664s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95588'), "last_name"=>"Kubatsch", "first_name"=>"Frederik"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000867s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0006439999999999999s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95589'), "last_name"=>"Glaze", "first_name"=>"Matty"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000499s
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001512s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0006029999999999999s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000526s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000495s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00047900000000000004s
+Started GET "/people" for ::1 at 2017-06-04 21:05:49 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0018549999999999999s
+  Rendered people/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 328ms (Views: 297.0ms)
+
+
+Started DELETE "/people/5934adebd85a823e770ceebd" for ::1 at 2017-06-04 21:06:05 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qktLsCwW5DXl8NG12bvkJrVKwOvsX2IVX/KRAf9tshpWs+FKq+xwge4h7312PJ2RV0iDG6SeoI151DSFwW0Ndw==", "id"=>"5934adebd85a823e770ceebd"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934adebd85a823e770ceebd')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000517s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934adebd85a823e770ceebd')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000745s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 5ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:06:05 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000559s
+  Rendered people/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 26ms (Views: 23.5ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0011769999999999999s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000556s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0004969999999999999s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000567s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00073s
+Started GET "/people" for ::1 at 2017-06-04 21:07:24 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001356s
+  Rendered people/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 306ms (Views: 287.0ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:08:44 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0007199999999999999s
+  Rendered people/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 65ms (Views: 57.0ms)
+
+
+Started DELETE "/people/5934ae39d85a823f18d95585" for ::1 at 2017-06-04 21:08:45 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BAUz91+zAiOOq64HbllBNdUyA7UspxBOrKpZPP4cWGj4/ZkN2EmWl4V6kM/B3jiCNzBARWRm0taKjPy4wBznBQ==", "id"=>"5934ae39d85a823f18d95585"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95585')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0007340000000000001s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95585')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.0007689999999999999s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 6ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:08:45 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000799s
+  Rendered people/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 28ms (Views: 26.1ms)
+
+
+Started DELETE "/people/5934ae39d85a823f18d95586" for ::1 at 2017-06-04 21:08:47 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2HmqJBG8Wts7UsAEzuVWBAuyeqr+BpMgjHicjWa3iXwkgQDelkbObzCD/sxhYi+z6bA5WrbHUbiqXjkJWLc2EQ==", "id"=>"5934ae39d85a823f18d95586"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95586')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000687s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95586')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.0007s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 4ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:08:47 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0027289999999999997s
+  Rendered people/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 61ms (Views: 59.2ms)
+
+
+Started DELETE "/people/5934ae39d85a823f18d95587" for ::1 at 2017-06-04 21:08:48 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XlzeXvEMuRmEgXZclf7vGiTQYYTzS9RU9VdnHaqVrs+ipHSkdvYtrY9QSJQ6eZatxtIidLuKFszTccKZlJURog==", "id"=>"5934ae39d85a823f18d95587"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95587')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000829s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95587')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000846s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 5ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:08:48 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000918s
+  Rendered people/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 41.9ms)
+
+
+Started DELETE "/people/5934ae39d85a823f18d95588" for ::1 at 2017-06-04 21:08:49 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hqj2R+XrpwfexWxNPUM2iUT//l7ehxjDNFjz5AVDnCJ6UFy9YhEzs9UUUoWSxE8+pv29rpZG2lsSflZgO0MjTw==", "id"=>"5934ae39d85a823f18d95588"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95588')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001216s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95588')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.001153s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 7ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:08:49 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001125s
+  Rendered people/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 39ms (Views: 36.7ms)
+
+
+Started DELETE "/people/5934ae39d85a823f18d95589" for ::1 at 2017-06-04 21:08:50 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BwYzzoM1GcfP35IMF91iqbuYcvXMYxGX/OP/Ry8eusP7/pk0BM+Nc8QOrMS4WhseWZoxBYSi0w/axVrDER4Frg==", "id"=>"5934ae39d85a823f18d95589"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95589')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001146s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934ae39d85a823f18d95589')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.001166s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 6ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:08:50 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000803s
+  Rendered people/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 47ms (Views: 44.6ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:15:02 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001741s
+  Rendered people/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 309ms (Views: 288.9ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:15:04 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001378s
+  Rendered people/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 26ms (Views: 23.6ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:15:05 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000533s
+  Rendered people/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 21.0ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:15:07 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000705s
+  Rendered people/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 19.3ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:15:34 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000615s
+  Rendered people/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 23.7ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:16:20 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0006090000000000001s
+  Rendered people/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 24.0ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:16:34 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0018059999999999999s
+  Rendered people/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 281ms (Views: 250.1ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:16:35 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000523s
+  Rendered people/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 21.6ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:16:48 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000514s
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 21.0ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:16:49 -0400
+Processing by PeopleController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/person.rb:8:in `initialize'
+app/controllers/people_controller.rb:17:in `new'
+app/controllers/people_controller.rb:17:in `new'
+Started GET "/people/new" for ::1 at 2017-06-04 21:17:29 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (19.2ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 49ms (Views: 40.3ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:17:31 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0005269999999999999s
+  Rendered people/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 23.8ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e6969'), "first_name"=>"Rina", "last_name"=>"Bending"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.001385s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696a'), "first_name"=>"Correy", "last_name"=>"Berkeley"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000455s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696b'), "first_name"=>"Kandace", "last_name"=>"Gumey"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000531s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696c'), "first_name"=>"Frederik", "last_name"=>"Kubatsch"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.00043s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696d'), "first_name"=>"Matty", "last_name"=>"Glaze"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.00035400000000000004s
+Started GET "/people" for ::1 at 2017-06-04 21:19:54 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001443s
+  Rendered people/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 291ms (Views: 272.1ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ed'), "first_name"=>"Rina", "last_name"=>"Bending"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.0013469999999999999s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ee'), "first_name"=>"Correy", "last_name"=>"Berkeley"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.00043200000000000004s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ef'), "first_name"=>"Kandace", "last_name"=>"Gumey"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000386s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5f0'), "first_name"=>"Frederik", "last_name"=>"Kubatsch"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.00047799999999999996s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5f1'), "first_name"=>"Matty", "last_name"=>"Glaze"}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.00046800000000000005s
+Started GET "/people/new" for ::1 at 2017-06-04 21:26:46 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (181.0ms)
+  Rendered people/new.html.erb within layouts/application (184.3ms)
+Completed 500 Internal Server Error in 215ms
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<ActionView::Helpers::FormBuilder:0x007fc5d640b958>):
+    28: 
+    29:   <div class="field">
+    30:     <%= form.label :btc_address %>
+    31:     <% if form.id %>
+    32:       <%= form.text_field :btc_address, id: :person_btc_address %>
+    33:     <% else %>
+    34:       <%= form.text_field :btc_address, id: :person_btc_address, value: 'YES' %>
+  
+app/views/people/_form.html.erb:31:in `block in _app_views_people__form_html_erb___2410921513075994955_70243847893320'
+app/views/people/_form.html.erb:1:in `_app_views_people__form_html_erb___2410921513075994955_70243847893320'
+app/views/people/new.html.erb:3:in `_app_views_people_new_html_erb__3582531691077693552_70243843413640'
+Started GET "/people/new" for ::1 at 2017-06-04 21:27:07 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.7ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 179ms (Views: 176.7ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:27:25 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (1.6ms)
+  Rendered people/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+SyntaxError (/Users/Development/Desktop/mongo-people/app/views/people/_form.html.erb:34: syntax error, unexpected ')'
+S', id: :person_btc_address, );@output_buffer.safe_append='
+                              ^
+/Users/Development/Desktop/mongo-people/app/views/people/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/Development/Desktop/mongo-people/app/views/people/_form.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/Development/Desktop/mongo-people/app/views/people/_form.html.erb:48: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/Development/Desktop/mongo-people/app/views/people/_form.html.erb:50: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/people/_form.html.erb:34: syntax error, unexpected ')'
+app/views/people/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/people/_form.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+app/views/people/_form.html.erb:48: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/people/_form.html.erb:50: syntax error, unexpected keyword_end, expecting ')'
+app/views/people/new.html.erb:3:in `_app_views_people_new_html_erb__3582531691077693552_70243848685740'
+Started GET "/people/new" for ::1 at 2017-06-04 21:27:38 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.1ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 30ms (Views: 27.3ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:28:44 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (5.3ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 32ms (Views: 29.6ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:29:07 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.5ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 27ms (Views: 24.5ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:29:21 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.1ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 23.7ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:29:24 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.002618s
+  Rendered people/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 33ms (Views: 31.2ms)
+
+
+Started GET "/people/5934b1b3d85a8243556e696a/edit" for ::1 at 2017-06-04 21:29:26 -0400
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"5934b1b3d85a8243556e696a"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696a')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000696s
+  Rendering people/edit.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.9ms) [cache miss]
+  Rendered people/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 41ms (Views: 35.8ms)
+
+
+Started GET "/people/5934b1b3d85a8243556e696a/edit" for ::1 at 2017-06-04 21:29:35 -0400
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"5934b1b3d85a8243556e696a"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696a')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00073s
+  Rendering people/edit.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.1ms) [cache miss]
+  Rendered people/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 31ms (Views: 27.0ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:31:25 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000843s
+  Rendered people/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 31ms (Views: 28.2ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:34:36 -0400
+Processing by PeopleController#new as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+NameError (uninitialized constant PeopleController::Bitcoin):
+  
+app/controllers/people_controller.rb:18:in `new'
+Started GET "/people/new" for ::1 at 2017-06-04 21:35:05 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (35.8ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 294ms (Views: 261.4ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:35:29 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (5.0ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 39ms (Views: 34.7ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:36:17 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.5ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 32ms (Views: 27.1ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:36:25 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.1ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 33ms (Views: 30.2ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:36:33 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.2ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 70ms (Views: 67.3ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:39:18 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.4ms)
+  Rendered people/new.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 51ms
+
+
+  
+SyntaxError (/Users/Development/Desktop/mongo-people/app/views/people/_form.html.erb:41: syntax error, unexpected '<'
+      <%= form.text_field :ip_address
+       ^):
+  
+app/views/people/_form.html.erb:41: syntax error, unexpected '<'
+app/views/people/new.html.erb:3:in `_app_views_people_new_html_erb___1586239352487761545_70326409911460'
+Started GET "/people/new" for ::1 at 2017-06-04 21:39:41 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (27.8ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 243ms (Views: 238.0ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:39:46 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.2ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 26ms (Views: 22.5ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:40:31 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.0ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 25ms (Views: 21.9ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:40:51 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 26ms (Views: 22.9ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:41:12 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 31ms (Views: 27.3ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:42:30 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (5.2ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 51ms (Views: 41.9ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:43:43 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (6.4ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 46ms (Views: 33.9ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:44:56 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 49ms (Views: 24.2ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:44:57 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0014249999999999998s
+  Rendered people/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 34ms (Views: 32.1ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:45:07 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.4ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 31ms (Views: 27.3ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:45:08 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hDt2CFH8jkRn/Kfobi9fZGNEXKWmmmL5MduDb0r+79VjPLRuDrw8q/1W/si9hBUHI3VXc/cVu3IOZcr83lbO1g==", "person"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "btc_address"=>"1HFGenFmBgoLLdoyKejkpPiemCZ88zCcdE", "ip_address"=>"81.194.59.20"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"first_name"=>"", "last_name"=>""}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0006810000000000001s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (5.1ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 32ms (Views: 26.7ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:45:13 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000621s
+  Rendered people/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 27ms (Views: 24.0ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:45:16 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 30ms (Views: 26.1ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:45:21 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyePzogOSBbNapQS/92kggaCl5jExUC8Iv54lVWpJsVwIE2o1076+VfAzTIsdu7hRrOcTpVKmTcdQDEGwQEHxg==", "person"=>{"first_name"=>"Rina", "last_name"=>"Bending", "email"=>"", "btc_address"=>"17S2fJE4g2QkxsYg4As1fUsxXWVwjK34Gb", "ip_address"=>"81.228.16.50"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"first_name"=>"Rina", "last_name"=>"Bending"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000757s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (6.1ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 35ms (Views: 30.3ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:45:44 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001416s
+  Rendered people/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 34ms (Views: 26.8ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:45:45 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 34ms (Views: 29.4ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:45:49 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0/BVfQKOtiBEcx9ow+3hnC9b4VY3VfgyuC4kukJNAnw095cbXc4Ez97ZRkgQRqv/b2rqgGbaIbmHkG0p1uUjfw==", "person"=>{"first_name"=>"Rina", "last_name"=>"Bending", "email"=>"", "btc_address"=>"1LZNGRN28uFEg2pH1wDRGKaypy1tgKjQNT", "ip_address"=>"236.80.56.5"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000642s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.3ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 32ms (Views: 26.6ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:47:29 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5kIKe6mNBeQQC4uAMHlPox1po6PNgP/luWBcB4BhIEMauqCBLneRUBvatUif/jYU/2vgU4VBPX2fRvmDvmGfLg==", "person"=>{"first_name"=>"Rina", "last_name"=>"Bending", "email"=>"", "btc_address"=>"", "ip_address"=>""}, "commit"=>"Create Person"}
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/person.rb:4:in `<class:Person>'
+app/models/person.rb:1:in `<top (required)>'
+app/controllers/people_controller.rb:31:in `create'
+Started GET "/people/new" for ::1 at 2017-06-04 21:47:45 -0400
+Processing by PeopleController#new as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/person.rb:4:in `<class:Person>'
+app/models/person.rb:1:in `<top (required)>'
+app/controllers/people_controller.rb:17:in `new'
+Started GET "/people/new" for ::1 at 2017-06-04 21:48:26 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (5.2ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 38ms (Views: 28.6ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:48:43 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (5.3ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 38ms (Views: 29.2ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:48:54 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9HAwqyVouxMG5sVtfkqtP2s6c4+3DMKVB93q6GNRNXcIiJpRopIvpw03+6XRzdSIiTgwf//NAA0h+09sXVGKGg==", "person"=>{"first_name"=>"Rina", "last_name"=>"Bending", "email"=>"", "btc_address"=>"1NozqsuHugzvru4houaZ2YymZm5SUASqNm", "ip_address"=>"247.252.197.28"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0008200000000000001s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.8ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 35ms (Views: 29.7ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:51:24 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0008219999999999999s
+  Rendered people/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 43ms (Views: 33.9ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:51:26 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.7ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 31ms (Views: 27.4ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:51:32 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CmDSGjrn5ePxF+kODzj/FfRtE3uFJJRUgFY4l/3V6Gb2mHjgvR1xV/rG18agv4aiFm9Qi83lVsymcJ0Tw9VXCw==", "person"=>{"first_name"=>"Rina", "last_name"=>"Bending", "email"=>"", "btc_address"=>"1HE7WpEPUyAjWTGMcot9XNWEfdkyPB1DGy", "ip_address"=>"148.26.156.44"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000523s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.2ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 32ms (Views: 27.3ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:52:09 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (4.5ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 31ms (Views: 27.7ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:52:11 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XVAph7PS6e3kWcbtmHm4JqwIjXOzfgyZ1pVgtx5I3tihqIN9NCh9We+I+CU3/sGRTgrOg/u/zgHws8UzIEhhtQ==", "person"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "btc_address"=>"15Szrq37LQzowJST2goYti3Pahay9y5SCA", "ip_address"=>"223.4.48.76"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"", "first_name"=>""}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000585s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (6.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 34ms (Views: 29.8ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:52:17 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b9BEcCU+7/MatycA5p4vgfAm9yJcXHcw5LhACURuFEaTKO6KosR7RxFmGchJGVY2EiS00hSdtajCnuWNem6rKw==", "person"=>{"first_name"=>"Rina", "last_name"=>"", "email"=>"", "btc_address"=>"15Szrq37LQzowJST2goYti3Pahay9y5SCA", "ip_address"=>"223.4.48.76"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0008100000000000001s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (3.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 32ms (Views: 27.4ms)
+
+
+Started POST "/people" for ::1 at 2017-06-04 21:52:20 -0400
+Processing by PeopleController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3+1RoPhmgUMnzBM8nVdlEIhg3VJjKu5lolRnF8hEFJsjFftaf5wV9ywdLfQy0BynamKeoivrLP2EcsKT9kSr9g==", "person"=>{"first_name"=>"Rina", "last_name"=>"Bending", "email"=>"", "btc_address"=>"15Szrq37LQzowJST2goYti3Pahay9y5SCA", "ip_address"=>"223.4.48.76"}, "commit"=>"Create Person"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0006569999999999999s
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (6.1ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 34ms (Views: 30.0ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:52:28 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0007080000000000001s
+  Rendered people/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 38ms (Views: 35.1ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00134s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley", "first_name"=>"Correy"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0005700000000000001s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey", "first_name"=>"Kandace"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0005059999999999999s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch", "first_name"=>"Frederik"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000571s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze", "first_name"=>"Matty"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000553s
+Started GET "/people" for ::1 at 2017-06-04 21:53:10 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001826s
+  Rendered people/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 286ms (Views: 253.2ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:53:12 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000847s
+  Rendered people/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 25ms (Views: 23.2ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:53:14 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0007639999999999999s
+  Rendered people/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 26ms (Views: 24.0ms)
+
+
+Started GET "/people/5934b1fdd85a8243c5e4e5ee" for ::1 at 2017-06-04 21:53:37 -0400
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"5934b1fdd85a8243c5e4e5ee"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ee')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00071s
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 20.1ms)
+
+
+Started DELETE "/people/5934b1b3d85a8243556e6969" for ::1 at 2017-06-04 21:54:44 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ixi8NZGfVDUn2nYAkKxXUITXsJsCYNk+zrqHlEsAEs7f4BbPFmXAgSwLSMg/Ky7nZtXza0qhG6bonCIQdQCtow==", "id"=>"5934b1b3d85a8243556e6969"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e6969')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0006450000000000001s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e6969')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000642s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 12ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:44 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001353s
+  Rendered people/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 29ms (Views: 26.9ms)
+
+
+Started DELETE "/people/5934b1b3d85a8243556e696a" for ::1 at 2017-06-04 21:54:46 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DG5bMWadq0Y0+G47t4Xzhi1O2VRc8NcYhrX6epZ6Nr7wlvHL4Wc/8j8pUPMYAooxz0yapBQxFYCgk1/+qHqJ0w==", "id"=>"5934b1b3d85a8243556e696a"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696a')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0007070000000000001s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696a')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.001777s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 7ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:46 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001015s
+  Rendered people/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 29ms (Views: 26.9ms)
+
+
+Started DELETE "/people/5934b1b3d85a8243556e696c" for ::1 at 2017-06-04 21:54:47 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0TYAvBRAa8R9CYztBn0Si9d/xgsmMyp2ujFQBjNP8XItzqpGk7r/cHbYsiWp+ms8NX2F+27y6O6cF/WCDU9OHw==", "id"=>"5934b1b3d85a8243556e696c"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696c')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000612s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696c')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000556s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 4ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:47 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000885s
+  Rendered people/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 28ms (Views: 25.7ms)
+
+
+Started DELETE "/people/5934b1b3d85a8243556e696d" for ::1 at 2017-06-04 21:54:47 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KewCLS+s8JpqAFj5V9xD8uAh+YoGq8isSSIztM4Jo2XVFKjXqFZkLmHRZjH4WzpFAiO6ek5qCjRvBJYw8AkcCA==", "id"=>"5934b1b3d85a8243556e696d"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696d')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000525s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696d')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000594s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 5ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:47 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0007059999999999999s
+  Rendered people/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 29ms (Views: 27.5ms)
+
+
+Started DELETE "/people/5934b1fdd85a8243c5e4e5ed" for ::1 at 2017-06-04 21:54:48 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pbKl5vS5nqDe84mu/uRp1lDO5I37eDytYIMiA3AufYxZSg8cc0MKFNUit2ZRYxBhssynfbO5/jVGpYeHTi7C4Q==", "id"=>"5934b1fdd85a8243c5e4e5ed"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ed')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000648s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ed')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000674s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 5ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:48 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00065s
+  Rendered people/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 39ms (Views: 35.4ms)
+
+
+Started DELETE "/people/5934b1fdd85a8243c5e4e5ee" for ::1 at 2017-06-04 21:54:48 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6wG16x8P7RrgwCrew9rnCsEGPPNMTCf0deF5l9gS/10X+R8RmPV5rusRFBZsXZ69IwR/AwSN5WxTx9wT5hJAMA==", "id"=>"5934b1fdd85a8243c5e4e5ee"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ee')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000531s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ee')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.00044100000000000004s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 4ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:48 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000572s
+  Rendered people/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 29ms (Views: 25.9ms)
+
+
+Started DELETE "/people/5934b1fdd85a8243c5e4e5ef" for ::1 at 2017-06-04 21:54:49 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e6dCiJ8Zt7fuLM6gFgXLla8sV8BPvTOaxcYKdGkf2teHX+hyGOMjA+X98Gi5grIiTS4UMAd88QLj4K/wVx9lug==", "id"=>"5934b1fdd85a8243c5e4e5ef"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ef')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000651s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5ef')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000685s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 6ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:49 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000557s
+  Rendered people/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 25.5ms)
+
+
+Started DELETE "/people/5934b1fdd85a8243c5e4e5f0" for ::1 at 2017-06-04 21:54:49 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RCPfdISJFDzTtpYV4h7QJmdqw2d4LugoSRoO/IXNBs6423WOA3OAiNhnqN1NmamRhWiAlzDvKrBvPKt4u825ow==", "id"=>"5934b1fdd85a8243c5e4e5f0"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5f0')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0010539999999999998s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5f0')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.001088s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 5ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:49 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000855s
+  Rendered people/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 34ms (Views: 31.6ms)
+
+
+Started DELETE "/people/5934b1fdd85a8243c5e4e5f1" for ::1 at 2017-06-04 21:54:50 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wfB6uMMqz025C/uzfefZSvS4Ov8zpHONjMzT2SaLFYI9CNBCRNBb+bLaxXvSYKD9Frp5D3tlsRWq6nZdGIuq7w==", "id"=>"5934b1fdd85a8243c5e4e5f1"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5f1')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000557s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1fdd85a8243c5e4e5f1')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000429s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 3ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:50 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0006760000000000001s
+  Rendered people/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 36ms (Views: 33.3ms)
+
+
+Started DELETE "/people/5934b1b3d85a8243556e696b" for ::1 at 2017-06-04 21:54:52 -0400
+Processing by PeopleController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wQqNOAFPxUnuQmqVoUn965EUxUpB9w72QpxJ7un+Gjw98ifChrVR/eWTVF0OzoRccxaGugk2zG5kuuxq1/6lUQ==", "id"=>"5934b1b3d85a8243556e696b"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696b')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000516s
+MONGODB | localhost:27017 | mongo_people_development.delete | STARTED | {"delete"=>"people", "deletes"=>[{"q"=>{"_id"=>BSON::ObjectId('5934b1b3d85a8243556e696b')}, "limit"=>1}], "ordered"=>true}
+MONGODB | localhost:27017 | mongo_people_development.delete | SUCCEEDED | 0.000537s
+Redirected to http://localhost:8080/people
+Completed 302 Found in 4ms
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:54:52 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000626s
+  Rendered people/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 22.6ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001483s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f96'), "first_name"=>"Rina", "last_name"=>"Bending", "email"=>"rbending0@godaddy.com", "btc_address"=>"12Hs94xsr6TBTnCuxDhGRQd5BKgDJCDZWW", "ip_address"=>"10.92.170.194"}]...
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.00058s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley", "first_name"=>"Correy"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000626s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f97'), "first_name"=>"Correy", "last_name"=>"Berkeley", "email"=>"cberkeley1@cyberchimps.com", "btc_address"=>"1NsGamfDNPEAFWxkw21mdLbsWQ4pTsXJ42", "ip_address"=>"44.171.4...
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000418s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey", "first_name"=>"Kandace"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00044300000000000003s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f98'), "first_name"=>"Kandace", "last_name"=>"Gumey", "email"=>"kgumey2@indiatimes.com", "btc_address"=>"1Eoh2wdhn4HmZR8uNu12X4QWMSivLTVxxb", "ip_address"=>"136.151.12.164...
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000384s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch", "first_name"=>"Frederik"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00044500000000000003s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f99'), "first_name"=>"Frederik", "last_name"=>"Kubatsch", "email"=>"fkubatsch3@alibaba.com", "btc_address"=>"1MAwENC25hSRhuZFSGEvDDGR7duUUj8RKi", "ip_address"=>"96.185.228...
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000389s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze", "first_name"=>"Matty"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000772s
+MONGODB | localhost:27017 | mongo_people_development.insert | STARTED | {"insert"=>"people", "documents"=>[{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f9a'), "first_name"=>"Matty", "last_name"=>"Glaze", "email"=>"mglaze4@gov.uk", "btc_address"=>"16gqwmYLnYt4xFEMMiGeV8LYXWH22Mm32n", "ip_address"=>"220.159.5.133"}], "order...
+MONGODB | localhost:27017 | mongo_people_development.insert | SUCCEEDED | 0.000732s
+Started GET "/people" for ::1 at 2017-06-04 21:55:04 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.002527s
+  Rendered people/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 281ms (Views: 247.1ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:55:09 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000606s
+  Rendered people/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 24ms (Views: 21.6ms)
+
+
+Started GET "/people/5934b9f3d85a824d72458f96/edit" for ::1 at 2017-06-04 21:55:11 -0400
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"5934b9f3d85a824d72458f96"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f96')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000758s
+  Rendering people/edit.html.erb within layouts/application
+  Rendered people/_form.html.erb (20.4ms) [cache miss]
+  Rendered people/edit.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 50ms (Views: 44.3ms)
+
+
+Started GET "/people/5934b9f3d85a824d72458f96/edit" for ::1 at 2017-06-04 21:55:44 -0400
+Processing by PeopleController#edit as HTML
+  Parameters: {"id"=>"5934b9f3d85a824d72458f96"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f96')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000746s
+  Rendering people/edit.html.erb within layouts/application
+  Rendered people/_form.html.erb (5.1ms) [cache miss]
+  Rendered people/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 45ms (Views: 39.7ms)
+
+
+Started PATCH "/people/5934b9f3d85a824d72458f96" for ::1 at 2017-06-04 21:55:51 -0400
+Processing by PeopleController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4TgHivtP8R1Na11fAEIwa1L7jxZ8ydMzY6YTv6unwFIdwK1wfLVlqUa6Y5evxUncsPnM5jQIEatFgLY7lad/Pw==", "person"=>{"first_name"=>"Rina", "last_name"=>"Bending", "email"=>"rbending0@godaddy.com", "btc_address"=>"12Hs94xsr6TBTnCuxDhGRQd5BKgDJCDZWW", "ip_address"=>"10.92.170.194"}, "commit"=>"Update Person", "id"=>"5934b9f3d85a824d72458f96"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f96')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000562s
+Redirected to http://localhost:8080/people/5934b9f3d85a824d72458f96
+Completed 302 Found in 4ms
+
+
+Started GET "/people/5934b9f3d85a824d72458f96" for ::1 at 2017-06-04 21:55:51 -0400
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"5934b9f3d85a824d72458f96"}
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"_id"=>BSON::ObjectId('5934b9f3d85a824d72458f96')}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000585s
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 22.1ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:55:53 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000575s
+  Rendered people/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 24.0ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0013520000000000001s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley", "first_name"=>"Correy"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000674s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey", "first_name"=>"Kandace"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00052s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch", "first_name"=>"Frederik"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000486s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze", "first_name"=>"Matty"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00042300000000000004s
+Started GET "/people" for ::1 at 2017-06-04 21:56:07 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0025080000000000002s
+  Rendered people/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 287ms (Views: 258.2ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:56:09 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000661s
+  Rendered people/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 24ms (Views: 21.7ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001436s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley", "first_name"=>"Correy"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0005700000000000001s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey", "first_name"=>"Kandace"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00044500000000000003s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch", "first_name"=>"Frederik"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00045200000000000004s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze", "first_name"=>"Matty"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00044300000000000003s
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Bending", "first_name"=>"Rina"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001426s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Berkeley", "first_name"=>"Correy"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000628s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Gumey", "first_name"=>"Kandace"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000485s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Kubatsch", "first_name"=>"Frederik"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.000503s
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{"last_name"=>"Glaze", "first_name"=>"Matty"}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.00044699999999999997s
+Started GET "/people" for ::1 at 2017-06-04 21:56:29 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.0027400000000000002s
+  Rendered people/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 286ms (Views: 253.2ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:56:35 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (20.9ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 51ms (Views: 44.6ms)
+
+
+Started GET "/people/new" for ::1 at 2017-06-04 21:57:38 -0400
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (31.6ms) [cache miss]
+  Rendered people/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 294ms (Views: 258.6ms)
+
+
+Started GET "/people" for ::1 at 2017-06-04 21:57:40 -0400
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | mongo_people_development.find | STARTED | {"find"=>"people", "filter"=>{}}
+MONGODB | localhost:27017 | mongo_people_development.find | SUCCEEDED | 0.001707s
+  Rendered people/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 29ms (Views: 26.8ms)
+
+
